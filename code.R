@@ -5,6 +5,7 @@ University of Central Florida
 Email: dtescalanti@gmail.com
 '''
 
+
 df<-read.csv("Data_ DRC Ebola Outbreak, North Kivu, Ituri and Équateur - MOH-By-Health-Zone.csv")
 df$time <- format(as.Date(df$date, "%m/%d/%y"), format = "%m/%y")
 df$time <- factor(df$time, levels = (unique(df$time)), ordered=TRUE)
